@@ -5,6 +5,37 @@ body{
 
 .container-principal{
     background-color: #ffffff;
-    margin: auto;
-    width: 50%;
+    padding: 20px;
+}
+
+.center{
+    margin: 50px auto;
+    width: 60%;
+}
+
+.border-rounded{
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 0px solid #000000;
+}
+
+.form-group > label {
+    font-weight: bold;
+}
+
+.form-group > input::placeholder {
+    color: #c0c4c7;
+}
+
+#cboGenero{
+    width: 120px;
+}
+
+
+input, textarea { 
+	font-family: FontAwesome, "Open Sans", Verdana, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
 }
