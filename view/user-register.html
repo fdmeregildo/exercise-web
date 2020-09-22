@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<head>  
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+    <link rel="stylesheet" href="../resources/js/bootstrap-4.5.2-dist/css/bootstrap.min.css"><link>
+    <link rel="stylesheet" href="../resources/css/style.css"><link>
+
+    <script src="../resources/js/jquery/jquery-3.5.1.min.js"></script<> 
+    <script src="../resources/js/bootstrap-4.5.2-dist/js/bootstrap.js"></script>
+    
+    <script src="../resources/js/user-register.js"></script>
+</head>
+
+<body>
+
+    <div class="container container-principal">
+        
+        <form id="frmUserRegister" action="/user-register">
+
+                <div class="form-group">
+                    <label for="txtNombre">Nombre</label>
+                    <input id="txtNombre" type="text" class="form-control" placeholder="Escribe el nombre"/>
+                </div>
+
+                <div class="form-group">
+                    <label for="txtApellidos">Apellidos</label>
+                    <input id="txtApellidos" type="text" class="form-control" placeholder="Escribe los apellidos" />
+                </div>
+            
+                <div class="form-group">
+                    <label for="txtTelefono">Teléfono</label>
+                    <input id="txtTelefono" type="number" class="form-control" placeholder="Introduce el número" />
+                </div>
+                
+                <div class="form-group">
+                    <label for="txtEmail">Email</label>
+                    <input id="txtEmail" type="email" class="form-control" placeholder="&#9993; Introduce el correo" />
+                </div>
+                
+                <div class="form-group">
+                    <label for="cboGenero">Genero</label>
+                    <select id="cboGenero" class="form-control">
+                        <option value="M">Masculino</option>
+                        <option value="F">Femenino</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <button id="btnGuardar" class="btn btn-success">Guardar</button>
+                </div>
+        </form>
+    </div>
+</body>
+</html>
