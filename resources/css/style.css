@@ -39,3 +39,7 @@ input, textarea {
     font-weight: normal;
     text-decoration: inherit;
 }
+
+.error{
+    color: red
+}

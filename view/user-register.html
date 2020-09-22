@@ -5,7 +5,9 @@
     <link rel="stylesheet" href="../resources/js/bootstrap-4.5.2-dist/css/bootstrap.min.css"><link>
     <link rel="stylesheet" href="../resources/css/style.css"><link>
 
-    <script src="../resources/js/jquery/jquery-3.5.1.min.js"></script<> 
+    <script src="../resources/js/jquery/jquery-3.5.1.min.js"></script> 
+    <script src="../resources/js/jquery/jquery.validate.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script> -->
     <script src="../resources/js/bootstrap-4.5.2-dist/js/bootstrap.js"></script>
     
     <script src="../resources/js/user-register.js"></script>
@@ -15,26 +17,26 @@
 
     <div class="container container-principal center border-rounded">
         
-        <form id="frmUserRegister" action="/user-register">
+        <form id="frmUserRegister" name="frmUserRegister" action="../index.html" method="POST">
 
                 <div class="form-group">
                     <label for="txtNombre">Nombre</label>
-                    <input id="txtNombre" type="text" class="form-control" placeholder="Escribe el nombre"/>
+                    <input id="txtNombre" name="txtNombre" type="text" class="form-control" placeholder="Escribe el nombre" required/>
                 </div>
 
                 <div class="form-group">
                     <label for="txtApellidos">Apellidos</label>
-                    <input id="txtApellidos" type="text" class="form-control" placeholder="Escribe los apellidos" />
+                    <input id="txtApellidos" name="txtApellidos" type="text" class="form-control" placeholder="Escribe los apellidos" required/>
                 </div>
             
                 <div class="form-group">
                     <label for="txtTelefono">Tel&eacute;fono</label>
-                    <input id="txtTelefono" type="text" class="form-control" placeholder="Introduce el número" />
+                    <input id="txtTelefono" name="txtTelefono" type="text" class="form-control" placeholder="Introduce el número" />
                 </div>
                 
                 <div class="form-group">
                     <label for="txtEmail">Email</label>
-                    <input id="txtEmail" type="email" class="form-control" placeholder="&#9993; Introduce el correo" />
+                    <input id="txtEmail"  name="txtEmail" type="email" class="form-control" placeholder="&#9993; Introduce el correo" requireds/>
                 </div>
                 
                 <div class="form-group">
@@ -46,9 +48,13 @@
                 </div>
                 
                 <div class="form-group">
-                    <button id="btnGuardar" class="btn btn-success">Guardar</button>
+                    <button id="btnGuardar" type="submit" class="btn btn-success">Guardar</button>
                 </div>
-        </form>
+                
+                <div class="alert alert-success" role="alert">
+                    <h4 class="alert-heading">Formulario ingresado correctamente!</h4>
+                </div>
+        </form> 
     </div>
 </body>
 </html>
